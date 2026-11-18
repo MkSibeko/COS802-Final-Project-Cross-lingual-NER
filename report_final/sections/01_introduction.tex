@@ -1,0 +1,18 @@
+\section{Introduction}\label{sec:intro}
+
+Named entity recognition (NER) is the task of identifying people, places and organisations in text, and for South African Bantu languages it is held back by the small amount of labelled data. Cross-lingual transfer offers an alternative, where a multilingual encoder is fine-tuned on a better-resourced source language and then applied to the target language without any target training data. The choice of source has a large effect; for example, in MasakhaNER~2.0, David Ifeoluwa Adelani et al.~\cite{adelani2022} found that zero-shot isiXhosa F1 rose from 24.5 with an English source to 83.7 with an isiZulu source.
+
+However, what makes a good source is less settled. Transfer has been linked to linguistic relatedness and pretraining exposure~\cite{devries2022,pires2019}, to token and entity overlap more than genetic distance~\cite{beukman2023,adelani2022}, and to factors whose value changes from one task to another~\cite{idris2026}. The evidence for South African languages is limited: MasakhaNER~2.0 covers news only and contains neither Sepedi nor Sesotho, which are Setswana's closest relatives~\cite{adelani2022}, and the only direct comparison of language and domain for NER that we found is a single Tshivenda result~\cite{mbuvha2023}.
+
+Thus, this study asks: \emph{how are linguistic relatedness, domain match and documented pretraining exposure associated with zero-shot and few-shot NER transfer among six South African Bantu languages?} It answers the following research questions:
+\begin{itemize}
+  \item \textbf{RQ1.} Does linguistic relatedness or domain match better predict zero-shot transfer?
+  \item \textbf{RQ2.} Do targets documented as seen in pretraining transfer better than unseen targets?
+  \item \textbf{RQ3.} How far do 100 and 500 labelled target sentences close transfer gaps?
+  \item \textbf{RQ4.} Are Sepedi and Sesotho stronger Setswana sources than Swahili and Chichewa, the top-ranked Setswana sources in MasakhaNER~2.0's LangRank analysis~\cite{lin2019,adelani2022}?
+\end{itemize}
+The hypotheses, as stated in the project proposal, are: \textbf{H1}, related sources transfer better on average, although domain match may reduce or reverse this; \textbf{H2}, seen targets show higher transfer ratios; \textbf{H3}, target data narrows transfer gaps; and \textbf{H4} (exploratory), Sepedi and Sesotho are better Setswana sources than Swahili and Chichewa, tested on Setswana news, where relatedness and domain conflict.
+
+This study contributes to the pool of knowledge in four ways. First, it crosses source language with source corpus for NER among Nguni and Sotho-Tswana languages, with 333 evaluations of one model. Second, it tests Sepedi and Sesotho as Setswana sources, for which we found no transformer-based precedent. Third, it compares the few-shot curves of a related-language source with those of a same-language source from the other corpus. Fourth, it proposes follow-up experiments in Section~\ref{sec:future} that could separate text domain from annotation conventions.
+
+The rest of this report is organised as follows: Section~\ref{sec:related} reviews related work, Sections~\ref{sec:data} and~\ref{sec:method} describe the data and method, Section~\ref{sec:results} presents the results and robustness checks, Section~\ref{sec:discussion} discusses them, and Sections~\ref{sec:limitations}--\ref{sec:conclusion} present the limitations, future work and conclusion.
