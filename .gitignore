@@ -1,0 +1,38 @@
+# Kept on this computer only (not published)
+report/
+docs/
+experiments/
+tools/
+future_work_proposal/
+notebooks/COS802_Experiment_full_local.ipynb
+
+# Superseded snapshots and the pre-cleanup backup (git history replaces them)
+archive/
+
+# LaTeX build files (main.pdf is kept)
+report*/*.aux
+report*/*.bbl
+report*/*.blg
+report*/*.fdb_latexmk
+report*/*.fls
+report*/*.log
+report*/*.out
+report*/*.synctex.gz
+*.aux
+*.log
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Datasets and model files are downloaded by the notebook, never committed
+data/
+*.safetensors
+*.bin
+
+# Office lock files and OS clutter
+~$*
+.DS_Store
+Thumbs.db
+desktop.ini
