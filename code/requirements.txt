@@ -1,0 +1,14 @@
+# Python packages for COS802_Experiment.ipynb and the figure scripts.
+# The notebook was run on Google Colab (T4 GPU), which also provides google.colab.
+# Install with: pip install -r requirements.txt
+torch>=2.1
+transformers>=4.40
+datasets
+accelerate
+numpy
+pandas
+scipy
+scikit-learn
+statsmodels
+matplotlib
+requests
