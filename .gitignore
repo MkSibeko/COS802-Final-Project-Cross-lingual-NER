@@ -45,3 +45,6 @@ desktop.ini
 code/figures/*.png
 code/figures/*.pdf
 *.zip
+
+# Slide builder kept locally
+code/presentation/

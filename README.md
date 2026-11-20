@@ -8,7 +8,6 @@
 | [`19144832_Sibeko_COS802_Presentation.pptx`](19144832_Sibeko_COS802_Presentation.pptx) | Presentation slides with speaker notes |
 | [`code/COS802_Experiment.ipynb`](code/COS802_Experiment.ipynb) | The complete experiment: data download, label harmonisation, deduplication and splits, fine-tuning AfroXLMR-base, evaluation, statistics and plots |
 | `code/figures/` | Scripts that draw the report's figures |
-| `code/presentation/` | Script that builds the slides |
 
 ## Running the code
 
@@ -20,4 +19,4 @@ The report's figures can be redrawn locally:
 cd code && python figures/make_heatmap.py && python figures/make_figures.py
 ```
 
-Python packages: `torch`, `transformers`, `datasets`, `seqeval`, `statsmodels`, `pandas`, `matplotlib`, `python-pptx`, `Pillow`.
+Python packages: `torch`, `transformers`, `datasets`, `seqeval`, `statsmodels`, `pandas`, `matplotlib`.
