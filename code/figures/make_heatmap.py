@@ -1,6 +1,6 @@
 # Redraws Figure 1 at column width. Values are the whole-number labels printed on the
 # zero-shot heatmap in the notebook (section 10.1, cell 56; means of 3 seeds).
-# Run from report_final/: python figures/make_heatmap.py
+# Run from code/: python figures/make_heatmap.py
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt

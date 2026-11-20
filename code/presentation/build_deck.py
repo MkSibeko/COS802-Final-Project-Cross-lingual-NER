@@ -1,5 +1,5 @@
 # Builds the COS802 presentation from the course template (7 content slides + thank-you).
-# Every number comes from report_final/sections and results/main_results_RQ1-RQ4.md (RQ1-RQ4 version of 11 Nov 2026).
+# Every number comes from the final report (RQ1-RQ4 version of 11 Nov 2026).
 import sys
 from pptx import Presentation
 from pptx.util import Inches, Pt
@@ -9,9 +9,9 @@ from pptx.enum.shapes import MSO_SHAPE
 from pptx.chart.data import CategoryChartData
 from pptx.enum.chart import XL_CHART_TYPE, XL_LEGEND_POSITION, XL_LABEL_POSITION
 
-ROOT = __import__("pathlib").Path(__file__).resolve().parent.parent
+ROOT = __import__("pathlib").Path(__file__).resolve().parents[2]   # repository root
 TEMPLATE = str(ROOT / "docs" / "course" / "COS802 2025 Presentation Template.pptx")
-OUT = sys.argv[1] if len(sys.argv) > 1 else str(ROOT / "presentation" / "19144832_Sibeko_COS802_Presentation.pptx")
+OUT = sys.argv[1] if len(sys.argv) > 1 else str(ROOT / "19144832_Sibeko_COS802_Presentation.pptx")
 
 # Template palette (UP blue and the kente pattern colours)
 BLUE, RED, ORANGE, GREEN = RGBColor(0x00, 0x5B, 0xAA), RGBColor(0xC8, 0x2A, 0x30), RGBColor(0xD9, 0x80, 0x10), RGBColor(0x3E, 0x75, 0x26)

@@ -1,4 +1,8 @@
 # Kept on this computer only (not published)
+report_final/
+results/
+notebooks/
+presentation/
 report/
 docs/
 experiments/
@@ -36,3 +40,8 @@ data/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Generated files
+code/figures/*.png
+code/figures/*.pdf
+*.zip

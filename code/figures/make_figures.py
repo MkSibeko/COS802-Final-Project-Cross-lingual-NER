@@ -1,6 +1,6 @@
-# Draws Figures 2-4 of the report from the verified notebook outputs in results/main_results_RQ1-RQ4.md
-# (cells 58, 62 and 64 of notebooks/COS802_Experiment.ipynb; means over seeds 13, 42 and 2026).
-# Run from report_final/: python figures/make_figures.py
+# Draws Figures 2-4 of the report from the verified outputs of COS802_Experiment.ipynb
+# (cells 58, 62 and 64; means over seeds 13, 42 and 2026).
+# Run from code/: python figures/make_figures.py
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
