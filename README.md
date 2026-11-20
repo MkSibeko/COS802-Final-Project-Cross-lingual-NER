@@ -6,7 +6,7 @@
 |---|---|
 | [`19144832_Sibeko_COS802_Final_Report.pdf`](19144832_Sibeko_COS802_Final_Report.pdf) | Final report (8 pages, SIGKDD Explorations format) |
 | [`19144832_Sibeko_COS802_Presentation.pptx`](19144832_Sibeko_COS802_Presentation.pptx) | Presentation slides with speaker notes |
-| [`code/COS802_Experiment.ipynb`](code/COS802_Experiment.ipynb) | The complete experiment: data download, label harmonisation, deduplication and splits, fine-tuning AfroXLMR-base, evaluation, statistics and plots |
+| [`code/COS802_Experiment.ipynb`](code/COS802_Experiment.ipynb) | The experiment: data download, label harmonisation, deduplication and splits, fine-tuning AfroXLMR-base, evaluation, statistics, robustness checks and plots |
 | `code/figures/` | Scripts that draw the report's figures |
 | [`code/requirements.txt`](code/requirements.txt) | Python packages needed by the notebook and scripts |
 
